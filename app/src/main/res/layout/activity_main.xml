@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="709dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/IniciarSesionPantalla"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="155dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:onClick="irIniciar"
+                android:text="@string/btn_iniciar_pantalla"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#00BCD4" />
+
+            <Button
+                android:id="@+id/Registrarpantalla"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:insetLeft="5dp"
+                android:insetRight="5dp"
+                android:onClick="irRegistrar"
+                android:text="@string/btn_registrar_pantalla"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:backgroundTint="#00BCD4"
+                app:iconPadding="8dp"
+                app:iconTint="#3F51B5"
+                app:strokeColor="#3F51B5" />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/historia"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/zeus" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/historia_btn"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="irHistoria"
+                    android:text="@string/Historia_btn" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sitios_turisticos" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/naturaleza" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/sitios_btn"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="irSitiosturisticos"
+                    android:text="@string/Sitios_Turisticos_btn" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Fauna" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/condor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/fauna_btn"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="irfaunayflora"
+                    android:text="@string/Fauna_btn" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+
+
+
+            </TableRow>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gastronomia" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/cocinero" />
+
+                        <Button
+                            android:id="@+id/resetas_btn"
+                            style="@style/Widget.AppCompat.Button.Small"
+                            android:layout_width="246dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="irgastronomia"
+                            android:text="@string/Resetas_btn" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </TableLayout>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

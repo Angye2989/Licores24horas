@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TOUR PURACE</string>
+
+
+    <string name="btn_iniciar_pantalla"> INICIAR SESION</string>
+    <string name="btn_registrar_pantalla">REGISTRARSE</string>
+
+
+    <string name="btn_IniciarSesion">INICIAR SESION</string>
+    <string name="btn_Registrarse">REGISTRARSE</string>
+
+    <string name="Historia_btn">HISTORIA</string>
+    <string name="Sitios_Turisticos_btn">Sitios Turisticos</string>
+    <string name="Fauna_btn">Fauna y Flora Puraceña</string>
+    <string name="Resetas_btn">Gastronomia</string>
+
+
+
+    <string name="historia">Conoce Purace</string>
+    <string name="sitios_turisticos">Visita sus sitios emblematicos</string>
+    <string name="Fauna">Vive su flora y fauna</string>
+    <string name="gastronomia">Tradicional</string>
+
+
+
+
+
+
+
+</resources>
